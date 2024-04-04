@@ -1,0 +1,1275 @@
+{
+	"info": {
+		"_postman_id": "e43add3f-891d-47bf-8e63-235148227d7f",
+		"name": "Lumen-Rest-API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1186529",
+		"_collection_link": "https://vepay-121222.postman.co/workspace/Whatsapp-JS~f3c2bdf5-eabe-4ab6-b7a1-fd4bd91dce65/collection/1186529-e43add3f-891d-47bf-8e63-235148227d7f?action=share&source=collection_link&creator=1186529"
+	},
+	"item": [
+		{
+			"name": "Product Service",
+			"item": [
+				{
+					"name": "Health",
+					"item": [
+						{
+							"name": "health",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/_health",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										"_health"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "status",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}/",
+									"host": [
+										"{{BASE_URL}}"
+									],
+									"path": [
+										""
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Products",
+					"item": [
+						{
+							"name": "Stocks",
+							"item": [
+								{
+									"name": "all",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/stock/",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"stock",
+												""
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:8000/v1/stock/",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8000",
+													"path": [
+														"v1",
+														"stock",
+														""
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": true,\n    \"message\": \"List Data Stock\",\n    \"data\": [\n        {\n            \"id\": \"0edd8124-d01a-3db0-8b5a-3590a8adfd12\",\n            \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n            \"type\": 1,\n            \"stock\": 97,\n            \"created_at\": \"2024-03-28 07:30:22\",\n            \"updated_at\": \"2024-03-28 07:30:22\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n                \"name\": \"Christa Willms\",\n                \"description\": \"Consequuntur amet labore consequatur maxime fugiat qui quos omnis. In et id voluptatibus laudantium est unde. Distinctio quas nostrum adipisci.\",\n                \"price\": \"97.46\",\n                \"created_at\": \"2024-03-28 07:30:21\",\n                \"updated_at\": \"2024-03-28 07:30:21\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"2296f0dd-a213-3bf4-aa8a-3f9b529d3da4\",\n            \"product_id\": \"a7dc787c-0d88-334f-a947-3d9236364ccc\",\n            \"type\": 1,\n            \"stock\": 81,\n            \"created_at\": \"2024-03-28 07:30:22\",\n            \"updated_at\": \"2024-03-28 07:30:22\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"a7dc787c-0d88-334f-a947-3d9236364ccc\",\n                \"name\": \"Francisca Sanford\",\n                \"description\": \"Itaque vel nobis dolorem neque. Sunt enim soluta et hic exercitationem eum error. Aspernatur nemo cum nam explicabo. Repellat libero mollitia est suscipit aut id officiis.\",\n                \"price\": \"947.89\",\n                \"created_at\": \"2024-03-28 07:30:21\",\n                \"updated_at\": \"2024-03-28 07:30:21\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"36cdba95-6d52-3763-a2c1-ea1374255d9a\",\n            \"product_id\": \"58ad8922-68c8-3eac-9822-7ee00164c13e\",\n            \"type\": 1,\n            \"stock\": 14,\n            \"created_at\": \"2024-03-28 07:34:29\",\n            \"updated_at\": \"2024-03-28 07:34:29\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"58ad8922-68c8-3eac-9822-7ee00164c13e\",\n                \"name\": \"Kimberly Ferry II\",\n                \"description\": \"Ipsa autem quod molestiae tempora voluptatem. Vel ea et possimus. Et tempora vel qui dolor quia.\",\n                \"price\": \"244.11\",\n                \"created_at\": \"2024-03-28 07:34:28\",\n                \"updated_at\": \"2024-03-28 07:34:28\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"388283aa-8cf9-3239-91ef-d0f201eb093f\",\n            \"product_id\": \"deda523f-1b0b-37e3-98c6-170f1e32a44f\",\n            \"type\": 0,\n            \"stock\": 65,\n            \"created_at\": \"2024-03-28 07:34:29\",\n            \"updated_at\": \"2024-03-28 07:34:29\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"deda523f-1b0b-37e3-98c6-170f1e32a44f\",\n                \"name\": \"Ethyl Fritsch\",\n                \"description\": \"Qui expedita consequatur ut alias hic. Aut consequatur distinctio ut aut minus. Corrupti explicabo est sed possimus aspernatur. Praesentium sunt recusandae ducimus blanditiis laborum animi.\",\n                \"price\": \"997.94\",\n                \"created_at\": \"2024-03-28 07:34:28\",\n                \"updated_at\": \"2024-03-28 07:34:28\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"3b703b93-a6ec-35de-94ba-7a55302e6018\",\n            \"product_id\": \"e78cd1fe-a792-3fb5-b01b-9107569b02d0\",\n            \"type\": 1,\n            \"stock\": 20,\n            \"created_at\": \"2024-03-28 07:30:22\",\n            \"updated_at\": \"2024-03-28 07:30:22\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"e78cd1fe-a792-3fb5-b01b-9107569b02d0\",\n                \"name\": \"Eulah Lueilwitz\",\n                \"description\": \"Aperiam vitae maiores commodi rerum facilis. Et omnis modi maxime in. Similique quasi velit qui in unde.\",\n                \"price\": \"540.84\",\n                \"created_at\": \"2024-03-28 07:30:21\",\n                \"updated_at\": \"2024-03-28 07:30:21\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"47abaaa8-a868-3452-b037-bba9b4bc36e9\",\n            \"product_id\": \"13e9a823-5877-3e8e-9fd8-02cd46e61f78\",\n            \"type\": 1,\n            \"stock\": 25,\n            \"created_at\": \"2024-03-28 07:30:22\",\n            \"updated_at\": \"2024-03-28 07:30:22\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"13e9a823-5877-3e8e-9fd8-02cd46e61f78\",\n                \"name\": \"Johnpaul Feil\",\n                \"description\": \"Nam porro maiores soluta et. Aut voluptas neque quia. Quis soluta adipisci beatae quas enim expedita occaecati. Nihil quia provident explicabo quod. Sapiente non quo in rem velit magnam sint.\",\n                \"price\": \"329.27\",\n                \"created_at\": \"2024-03-28 07:30:21\",\n                \"updated_at\": \"2024-03-28 07:30:21\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"4bf2ea2f-e98e-452b-8755-302f445b8bfd\",\n            \"product_id\": \"ae36873a-6f34-429d-a199-f62cf650fab9\",\n            \"type\": 0,\n            \"stock\": 100,\n            \"created_at\": \"2024-04-04 05:51:08\",\n            \"updated_at\": \"2024-04-04 05:51:08\",\n            \"deleted_at\": null,\n            \"product\": null\n        },\n        {\n            \"id\": \"74a8f389-3b67-3671-8fc1-e042e3fffbff\",\n            \"product_id\": \"ce5d2a61-5a58-3248-8d3e-3760f371dbe8\",\n            \"type\": 0,\n            \"stock\": 28,\n            \"created_at\": \"2024-03-28 07:34:29\",\n            \"updated_at\": \"2024-03-28 07:34:29\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"ce5d2a61-5a58-3248-8d3e-3760f371dbe8\",\n                \"name\": \"Xavier Jakubowski\",\n                \"description\": \"Occaecati in quas odit accusantium aliquid. Id repellat eaque optio dignissimos. Ut quo illum voluptatem illo nisi accusantium beatae fugit. Delectus sunt voluptas vitae sed sequi ipsam.\",\n                \"price\": \"272.00\",\n                \"created_at\": \"2024-03-28 07:30:21\",\n                \"updated_at\": \"2024-03-28 07:30:21\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"75e3dc31-9380-34c1-a849-c8b1360f1f99\",\n            \"product_id\": \"c41968ee-abfd-3874-92d9-5a08252f322e\",\n            \"type\": 1,\n            \"stock\": 99,\n            \"created_at\": \"2024-03-28 07:34:29\",\n            \"updated_at\": \"2024-03-28 07:34:29\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"c41968ee-abfd-3874-92d9-5a08252f322e\",\n                \"name\": \"Dax Shields Jr.\",\n                \"description\": \"Qui est vitae quo omnis. Sunt labore est dolor soluta excepturi labore. Et iste est dignissimos et.\",\n                \"price\": \"126.18\",\n                \"created_at\": \"2024-03-28 07:30:21\",\n                \"updated_at\": \"2024-03-28 07:30:21\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"80533f22-5d0b-3d7e-9653-c4c26f003b99\",\n            \"product_id\": \"902cc105-7922-3e3f-a279-5e4fb455bd24\",\n            \"type\": 1,\n            \"stock\": 11,\n            \"created_at\": \"2024-03-28 07:34:29\",\n            \"updated_at\": \"2024-03-28 07:34:29\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"902cc105-7922-3e3f-a279-5e4fb455bd24\",\n                \"name\": \"Mr. Alejandrin Gutkowski DVM\",\n                \"description\": \"Et sit temporibus et molestiae atque voluptates quam. Est sequi aut sed dolor atque adipisci exercitationem. Sed incidunt vel quisquam ut aut cum vitae.\",\n                \"price\": \"175.01\",\n                \"created_at\": \"2024-03-28 07:34:28\",\n                \"updated_at\": \"2024-03-28 07:34:28\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"92f02ee2-51c9-3c64-8474-c533a0f3270e\",\n            \"product_id\": \"79e09a59-ac62-358c-98c2-8d10791819ff\",\n            \"type\": 1,\n            \"stock\": 80,\n            \"created_at\": \"2024-03-28 07:30:22\",\n            \"updated_at\": \"2024-03-28 07:30:22\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"79e09a59-ac62-358c-98c2-8d10791819ff\",\n                \"name\": \"Dr. Chet McDermott I\",\n                \"description\": \"Veniam quia est vel accusamus officiis aspernatur. Deserunt voluptatem amet cumque. Esse incidunt dolorem quam sint delectus saepe nihil. Quia id et cum asperiores et ut totam.\",\n                \"price\": \"492.12\",\n                \"created_at\": \"2024-03-28 07:30:21\",\n                \"updated_at\": \"2024-03-28 07:30:21\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"93a02dad-c915-3f33-b101-fda1154eac6d\",\n            \"product_id\": \"b159f55d-2f58-350e-a4e8-8b3f4b1dc3d7\",\n            \"type\": 1,\n            \"stock\": 87,\n            \"created_at\": \"2024-03-28 07:30:22\",\n            \"updated_at\": \"2024-03-28 07:30:22\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"b159f55d-2f58-350e-a4e8-8b3f4b1dc3d7\",\n                \"name\": \"Adrianna Breitenberg\",\n                \"description\": \"Qui tenetur laborum voluptatem ut cum et ut. Est iusto voluptate provident voluptas repudiandae fugit laudantium qui. Dolore dolorum suscipit provident possimus. Provident et modi quia eaque.\",\n                \"price\": \"614.70\",\n                \"created_at\": \"2024-03-28 07:30:21\",\n                \"updated_at\": \"2024-03-28 07:30:21\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"aafdce0f-877f-3a35-9030-eb2a947feec3\",\n            \"product_id\": \"f358d249-00bc-3bc3-bb4b-29d034543a63\",\n            \"type\": 0,\n            \"stock\": 97,\n            \"created_at\": \"2024-03-28 07:30:22\",\n            \"updated_at\": \"2024-03-28 07:30:22\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"f358d249-00bc-3bc3-bb4b-29d034543a63\",\n                \"name\": \"Helga Morissette\",\n                \"description\": \"Facere voluptate est et culpa doloribus vero molestiae. Eius sint ea consequuntur minima repellat quas excepturi.\",\n                \"price\": \"700.15\",\n                \"created_at\": \"2024-03-28 07:30:21\",\n                \"updated_at\": \"2024-03-28 07:30:21\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"ae467bf8-c531-347c-875e-c0792845d0ea\",\n            \"product_id\": \"b159f55d-2f58-350e-a4e8-8b3f4b1dc3d7\",\n            \"type\": 1,\n            \"stock\": 75,\n            \"created_at\": \"2024-03-28 07:34:29\",\n            \"updated_at\": \"2024-03-28 07:34:29\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"b159f55d-2f58-350e-a4e8-8b3f4b1dc3d7\",\n                \"name\": \"Adrianna Breitenberg\",\n                \"description\": \"Qui tenetur laborum voluptatem ut cum et ut. Est iusto voluptate provident voluptas repudiandae fugit laudantium qui. Dolore dolorum suscipit provident possimus. Provident et modi quia eaque.\",\n                \"price\": \"614.70\",\n                \"created_at\": \"2024-03-28 07:30:21\",\n                \"updated_at\": \"2024-03-28 07:30:21\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"b186a04e-fbdd-30d0-a68b-0a2c0e0cc419\",\n            \"product_id\": \"a06dce61-f1eb-3b9a-9272-4ca31e429a35\",\n            \"type\": 1,\n            \"stock\": 10,\n            \"created_at\": \"2024-03-28 07:30:22\",\n            \"updated_at\": \"2024-03-28 07:30:22\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"a06dce61-f1eb-3b9a-9272-4ca31e429a35\",\n                \"name\": \"Mr. Austyn Pfeffer\",\n                \"description\": \"Assumenda quae ut nulla rem veritatis. Amet qui error quis a. Minima voluptatibus voluptas iste voluptates doloremque. Id aut sint est et repellat qui. Qui odio aut consequuntur cum voluptate.\",\n                \"price\": \"962.89\",\n                \"created_at\": \"2024-03-28 07:30:20\",\n                \"updated_at\": \"2024-03-28 07:30:20\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"b3c3a0f6-01d8-3a6b-8ae0-2cf7571b5f93\",\n            \"product_id\": \"4bb16cf8-7c93-32d8-bb8c-2f01e4e0d0d5\",\n            \"type\": 1,\n            \"stock\": 49,\n            \"created_at\": \"2024-03-28 07:34:29\",\n            \"updated_at\": \"2024-03-28 07:34:29\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"4bb16cf8-7c93-32d8-bb8c-2f01e4e0d0d5\",\n                \"name\": \"Florine Welch\",\n                \"description\": \"Animi dolores suscipit aut amet quaerat consequatur. Laboriosam culpa et ad tenetur dolor quia. Voluptatem maxime officiis voluptatem cupiditate cupiditate. Rerum expedita et et rem.\",\n                \"price\": \"837.79\",\n                \"created_at\": \"2024-03-28 07:34:28\",\n                \"updated_at\": \"2024-03-28 07:34:28\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"b827e665-5bd9-3066-85e2-0577cf1af9f2\",\n            \"product_id\": \"b159f55d-2f58-350e-a4e8-8b3f4b1dc3d7\",\n            \"type\": 0,\n            \"stock\": 62,\n            \"created_at\": \"2024-03-28 07:30:22\",\n            \"updated_at\": \"2024-03-28 07:30:22\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"b159f55d-2f58-350e-a4e8-8b3f4b1dc3d7\",\n                \"name\": \"Adrianna Breitenberg\",\n                \"description\": \"Qui tenetur laborum voluptatem ut cum et ut. Est iusto voluptate provident voluptas repudiandae fugit laudantium qui. Dolore dolorum suscipit provident possimus. Provident et modi quia eaque.\",\n                \"price\": \"614.70\",\n                \"created_at\": \"2024-03-28 07:30:21\",\n                \"updated_at\": \"2024-03-28 07:30:21\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"bd9aee57-8aaf-3473-bae5-c4638ab49d94\",\n            \"product_id\": \"a06dce61-f1eb-3b9a-9272-4ca31e429a35\",\n            \"type\": 0,\n            \"stock\": 10,\n            \"created_at\": \"2024-03-28 07:30:22\",\n            \"updated_at\": \"2024-03-28 07:30:22\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"a06dce61-f1eb-3b9a-9272-4ca31e429a35\",\n                \"name\": \"Mr. Austyn Pfeffer\",\n                \"description\": \"Assumenda quae ut nulla rem veritatis. Amet qui error quis a. Minima voluptatibus voluptas iste voluptates doloremque. Id aut sint est et repellat qui. Qui odio aut consequuntur cum voluptate.\",\n                \"price\": \"962.89\",\n                \"created_at\": \"2024-03-28 07:30:20\",\n                \"updated_at\": \"2024-03-28 07:30:20\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"df7b9d7e-35a4-3e55-939c-070c3f5812c7\",\n            \"product_id\": \"4bb16cf8-7c93-32d8-bb8c-2f01e4e0d0d5\",\n            \"type\": 0,\n            \"stock\": 99,\n            \"created_at\": \"2024-03-28 07:34:29\",\n            \"updated_at\": \"2024-03-28 07:34:29\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"4bb16cf8-7c93-32d8-bb8c-2f01e4e0d0d5\",\n                \"name\": \"Florine Welch\",\n                \"description\": \"Animi dolores suscipit aut amet quaerat consequatur. Laboriosam culpa et ad tenetur dolor quia. Voluptatem maxime officiis voluptatem cupiditate cupiditate. Rerum expedita et et rem.\",\n                \"price\": \"837.79\",\n                \"created_at\": \"2024-03-28 07:34:28\",\n                \"updated_at\": \"2024-03-28 07:34:28\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"e306c30d-9695-352e-8c19-0eb9f9e4b4ef\",\n            \"product_id\": \"de95a6ef-6f64-3c5d-a748-291f25e57c1b\",\n            \"type\": 0,\n            \"stock\": 19,\n            \"created_at\": \"2024-03-28 07:34:29\",\n            \"updated_at\": \"2024-03-28 07:34:29\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"de95a6ef-6f64-3c5d-a748-291f25e57c1b\",\n                \"name\": \"Jacynthe Kris PhD\",\n                \"description\": \"Saepe nobis sequi possimus optio placeat repudiandae sint eveniet. Eaque cum modi eum. Est qui enim et quibusdam veniam voluptas qui.\",\n                \"price\": \"306.50\",\n                \"created_at\": \"2024-03-28 07:34:28\",\n                \"updated_at\": \"2024-03-28 07:34:28\",\n                \"deleted_at\": null\n            }\n        },\n        {\n            \"id\": \"f02cd849-33f5-3ada-84b5-fa8397aaa0ea\",\n            \"product_id\": \"902cc105-7922-3e3f-a279-5e4fb455bd24\",\n            \"type\": 0,\n            \"stock\": 42,\n            \"created_at\": \"2024-03-28 07:34:29\",\n            \"updated_at\": \"2024-03-28 07:34:29\",\n            \"deleted_at\": null,\n            \"product\": {\n                \"id\": \"902cc105-7922-3e3f-a279-5e4fb455bd24\",\n                \"name\": \"Mr. Alejandrin Gutkowski DVM\",\n                \"description\": \"Et sit temporibus et molestiae atque voluptates quam. Est sequi aut sed dolor atque adipisci exercitationem. Sed incidunt vel quisquam ut aut cum vitae.\",\n                \"price\": \"175.01\",\n                \"created_at\": \"2024-03-28 07:34:28\",\n                \"updated_at\": \"2024-03-28 07:34:28\",\n                \"deleted_at\": null\n            }\n        }\n    ]\n}"
+										}
+									]
+								},
+								{
+									"name": "detail",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/stock/:id",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"stock",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "0edd8124-d01a-3db0-8b5a-3590a8adfd12"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:8000/v1/stock/:id",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8000",
+													"path": [
+														"v1",
+														"stock",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "0edd8124-d01a-3db0-8b5a-3590a8adfd12"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": true,\n    \"message\": \"Detail Data Stock\",\n    \"data\": {\n        \"id\": \"0edd8124-d01a-3db0-8b5a-3590a8adfd12\",\n        \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n        \"type\": 1,\n        \"stock\": 97,\n        \"created_at\": \"2024-03-28 07:30:22\",\n        \"updated_at\": \"2024-03-28 07:30:22\",\n        \"deleted_at\": null,\n        \"product\": {\n            \"id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n            \"name\": \"Christa Willms\",\n            \"description\": \"Consequuntur amet labore consequatur maxime fugiat qui quos omnis. In et id voluptatibus laudantium est unde. Distinctio quas nostrum adipisci.\",\n            \"price\": \"97.46\",\n            \"created_at\": \"2024-03-28 07:30:21\",\n            \"updated_at\": \"2024-03-28 07:30:21\",\n            \"deleted_at\": null\n        }\n    }\n}"
+										},
+										{
+											"name": "400",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}{{PREFIX}}/stock/:id",
+													"host": [
+														"{{BASE_URL}}{{PREFIX}}"
+													],
+													"path": [
+														"stock",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": ""
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": false,\n    \"message\": \"Invalid Id\"\n}"
+										},
+										{
+											"name": "404",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}{{PREFIX}}/stock/:id",
+													"host": [
+														"{{BASE_URL}}{{PREFIX}}"
+													],
+													"path": [
+														"stock",
+														":id"
+													],
+													"variable": [
+														{
+															"key": "id",
+															"value": "6b84dbb7-0773-3c8d-98af-c9b3ea34076d"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": false,\n    \"message\": \"Stock not found\"\n}"
+										}
+									]
+								},
+								{
+									"name": "stock by product id",
+									"request": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/stock/product/:product_id",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"stock",
+												"product",
+												":product_id"
+											],
+											"variable": [
+												{
+													"key": "product_id",
+													"value": "6b84dbb7-0773-3c8d-98af-c9b3ea34076d"
+												}
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "200",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "http://localhost:8000/v1/stock/product/:product_id",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8000",
+													"path": [
+														"v1",
+														"stock",
+														"product",
+														":product_id"
+													],
+													"variable": [
+														{
+															"key": "product_id",
+															"value": "6b84dbb7-0773-3c8d-98af-c9b3ea34076d"
+														}
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": true,\n    \"message\": \"List Data Stock\",\n    \"data\": {\n        \"product\": {\n            \"id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n            \"name\": \"Christa Willms\",\n            \"description\": \"Consequuntur amet labore consequatur maxime fugiat qui quos omnis. In et id voluptatibus laudantium est unde. Distinctio quas nostrum adipisci.\",\n            \"price\": \"97.46\",\n            \"created_at\": \"2024-03-28 07:30:21\",\n            \"updated_at\": \"2024-03-28 07:30:21\",\n            \"deleted_at\": null,\n            \"stock\": 10\n        },\n        \"stock_in\": [\n            {\n                \"id\": \"cce071a8-8003-41d6-b8f1-45f50998904b\",\n                \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n                \"type\": 0,\n                \"stock\": 10,\n                \"created_at\": \"2024-04-04 07:29:29\",\n                \"updated_at\": \"2024-04-04 07:29:29\",\n                \"deleted_at\": null\n            }\n        ],\n        \"stock_out\": [\n            {\n                \"id\": \"0edd8124-d01a-3db0-8b5a-3590a8adfd12\",\n                \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n                \"type\": 1,\n                \"stock\": 97,\n                \"created_at\": \"2024-03-28 07:30:22\",\n                \"updated_at\": \"2024-03-28 07:30:22\",\n                \"deleted_at\": null\n            },\n            {\n                \"id\": \"0f112500-27a0-49cd-8ad6-57e7341adebe\",\n                \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n                \"type\": 1,\n                \"stock\": 10,\n                \"created_at\": \"2024-04-04 07:30:33\",\n                \"updated_at\": \"2024-04-04 07:30:33\",\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+										},
+										{
+											"name": "400",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}{{PREFIX}}/stock/product/:product_id",
+													"host": [
+														"{{BASE_URL}}{{PREFIX}}"
+													],
+													"path": [
+														"stock",
+														"product",
+														":product_id"
+													],
+													"variable": [
+														{
+															"key": "product_id",
+															"value": ""
+														}
+													]
+												}
+											},
+											"status": "Bad Request",
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": false,\n    \"message\": \"Invalid Id\"\n}"
+										},
+										{
+											"name": "404",
+											"originalRequest": {
+												"method": "GET",
+												"header": [],
+												"url": {
+													"raw": "{{BASE_URL}}{{PREFIX}}/stock/product/:product_id",
+													"host": [
+														"{{BASE_URL}}{{PREFIX}}"
+													],
+													"path": [
+														"stock",
+														"product",
+														":product_id"
+													],
+													"variable": [
+														{
+															"key": "product_id",
+															"value": "6b84dbb7-0773-3c8d-98af-c9b3ea34076d"
+														}
+													]
+												}
+											},
+											"status": "Not Found",
+											"code": 404,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": false,\n    \"message\": \"Stock not found\"\n}"
+										}
+									]
+								},
+								{
+									"name": "stock in",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\r\n    \"stock\": 10\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/stock/in",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"stock",
+												"in"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "200",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\r\n    \"stock\": 10\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:8000/v1/stock/in",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8000",
+													"path": [
+														"v1",
+														"stock",
+														"in"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": true,\n    \"message\": \"Data Stock Created\",\n    \"data\": {\n        \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n        \"stock\": 10,\n        \"type\": 0,\n        \"id\": \"cce071a8-8003-41d6-b8f1-45f50998904b\",\n        \"updated_at\": \"2024-04-04 07:29:29\",\n        \"created_at\": \"2024-04-04 07:29:29\"\n    }\n}"
+										},
+										{
+											"name": "400",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"product_id\": \"\",\r\n    \"stock\": 10\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{BASE_URL}}{{PREFIX}}/stock/in",
+													"host": [
+														"{{BASE_URL}}{{PREFIX}}"
+													],
+													"path": [
+														"stock",
+														"in"
+													]
+												}
+											},
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"message\": \"The given data was invalid.\",\n    \"errors\": {\n        \"product_id\": [\n            \"Product Id is required\"\n        ],\n        \"type\": [\n            \"Type is required\"\n        ]\n    }\n}"
+										}
+									]
+								},
+								{
+									"name": "stock out",
+									"request": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\r\n    \"stock\": 10\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/stock/out",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"stock",
+												"out"
+											]
+										}
+									},
+									"response": [
+										{
+											"name": "200",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\r\n    \"stock\": 10\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "http://localhost:8000/v1/stock/out",
+													"protocol": "http",
+													"host": [
+														"localhost"
+													],
+													"port": "8000",
+													"path": [
+														"v1",
+														"stock",
+														"out"
+													]
+												}
+											},
+											"status": "OK",
+											"code": 200,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"success\": true,\n    \"message\": \"Data Stock Created\",\n    \"data\": {\n        \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n        \"stock\": 10,\n        \"type\": 1,\n        \"id\": \"0f112500-27a0-49cd-8ad6-57e7341adebe\",\n        \"updated_at\": \"2024-04-04 07:30:33\",\n        \"created_at\": \"2024-04-04 07:30:33\"\n    }\n}"
+										},
+										{
+											"name": "400",
+											"originalRequest": {
+												"method": "POST",
+												"header": [],
+												"body": {
+													"mode": "raw",
+													"raw": "{\r\n    \"product_id\": \"\",\r\n    \"stock\": 10\r\n}",
+													"options": {
+														"raw": {
+															"language": "json"
+														}
+													}
+												},
+												"url": {
+													"raw": "{{BASE_URL}}{{PREFIX}}/stock/out",
+													"host": [
+														"{{BASE_URL}}{{PREFIX}}"
+													],
+													"path": [
+														"stock",
+														"out"
+													]
+												}
+											},
+											"code": 400,
+											"_postman_previewlanguage": "json",
+											"header": [
+												{
+													"key": "Content-Type",
+													"value": "application/json",
+													"name": "Content-Type",
+													"description": "",
+													"type": "text"
+												}
+											],
+											"cookie": [],
+											"body": "{\n    \"message\": \"The given data was invalid.\",\n    \"errors\": {\n        \"product_id\": [\n            \"Product Id is required\"\n        ],\n        \"stock\": [\n            \"Stock is required\"\n        ]\n    }\n}"
+										}
+									]
+								}
+							]
+						},
+						{
+							"name": "all",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}{{PREFIX}}/product/?page=&limit=&search={\"name\": \"\", \"description\": \"\"}",
+									"host": [
+										"{{BASE_URL}}{{PREFIX}}"
+									],
+									"path": [
+										"product",
+										""
+									],
+									"query": [
+										{
+											"key": "page",
+											"value": ""
+										},
+										{
+											"key": "limit",
+											"value": ""
+										},
+										{
+											"key": "search",
+											"value": "{\"name\": \"\", \"description\": \"\"}"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/v1/product/?page=&limit=&search={\"name\": \"\", \"description\": \"\"}",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"v1",
+												"product",
+												""
+											],
+											"query": [
+												{
+													"key": "page",
+													"value": ""
+												},
+												{
+													"key": "limit",
+													"value": ""
+												},
+												{
+													"key": "search",
+													"value": "{\"name\": \"\", \"description\": \"\"}"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": [\n        {\n            \"id\": \"0aae4ad4-3e94-3d7b-b6a0-a17d4ff7c968\",\n            \"name\": \"Mr. Dennis O'Hara IV\",\n            \"description\": \"Aliquam cum incidunt enim commodi id. Omnis possimus possimus non. Aliquam labore itaque minima voluptatum. Quia perspiciatis fuga rerum minima quos.\",\n            \"price\": \"119.63\",\n            \"created_at\": \"2024-03-28 07:34:28\",\n            \"updated_at\": \"2024-03-28 07:34:28\",\n            \"stock\": null,\n            \"stocks\": []\n        },\n        {\n            \"id\": \"13e9a823-5877-3e8e-9fd8-02cd46e61f78\",\n            \"name\": \"Johnpaul Feil\",\n            \"description\": \"Nam porro maiores soluta et. Aut voluptas neque quia. Quis soluta adipisci beatae quas enim expedita occaecati. Nihil quia provident explicabo quod. Sapiente non quo in rem velit magnam sint.\",\n            \"price\": \"329.27\",\n            \"created_at\": \"2024-03-28 07:30:21\",\n            \"updated_at\": \"2024-03-28 07:30:21\",\n            \"stock\": \"25\",\n            \"stocks\": [\n                {\n                    \"id\": \"47abaaa8-a868-3452-b037-bba9b4bc36e9\",\n                    \"product_id\": \"13e9a823-5877-3e8e-9fd8-02cd46e61f78\",\n                    \"type\": 1,\n                    \"stock\": 25,\n                    \"created_at\": \"2024-03-28 07:30:22\",\n                    \"updated_at\": \"2024-03-28 07:30:22\"\n                }\n            ]\n        },\n        {\n            \"id\": \"4b69eb13-ebd4-3362-9c59-f1b3a8e4e286\",\n            \"name\": \"Dovie Koepp\",\n            \"description\": \"Omnis pariatur necessitatibus magni cumque ullam vel voluptas voluptatem. Enim beatae non reiciendis iste.\",\n            \"price\": \"384.46\",\n            \"created_at\": \"2024-03-28 07:34:28\",\n            \"updated_at\": \"2024-03-28 07:34:28\",\n            \"stock\": null,\n            \"stocks\": []\n        },\n        {\n            \"id\": \"4bb16cf8-7c93-32d8-bb8c-2f01e4e0d0d5\",\n            \"name\": \"Florine Welch\",\n            \"description\": \"Animi dolores suscipit aut amet quaerat consequatur. Laboriosam culpa et ad tenetur dolor quia. Voluptatem maxime officiis voluptatem cupiditate cupiditate. Rerum expedita et et rem.\",\n            \"price\": \"837.79\",\n            \"created_at\": \"2024-03-28 07:34:28\",\n            \"updated_at\": \"2024-03-28 07:34:28\",\n            \"stock\": \"148\",\n            \"stocks\": [\n                {\n                    \"id\": \"b3c3a0f6-01d8-3a6b-8ae0-2cf7571b5f93\",\n                    \"product_id\": \"4bb16cf8-7c93-32d8-bb8c-2f01e4e0d0d5\",\n                    \"type\": 1,\n                    \"stock\": 49,\n                    \"created_at\": \"2024-03-28 07:34:29\",\n                    \"updated_at\": \"2024-03-28 07:34:29\"\n                },\n                {\n                    \"id\": \"df7b9d7e-35a4-3e55-939c-070c3f5812c7\",\n                    \"product_id\": \"4bb16cf8-7c93-32d8-bb8c-2f01e4e0d0d5\",\n                    \"type\": 0,\n                    \"stock\": 99,\n                    \"created_at\": \"2024-03-28 07:34:29\",\n                    \"updated_at\": \"2024-03-28 07:34:29\"\n                }\n            ]\n        },\n        {\n            \"id\": \"58ad8922-68c8-3eac-9822-7ee00164c13e\",\n            \"name\": \"Kimberly Ferry II\",\n            \"description\": \"Ipsa autem quod molestiae tempora voluptatem. Vel ea et possimus. Et tempora vel qui dolor quia.\",\n            \"price\": \"244.11\",\n            \"created_at\": \"2024-03-28 07:34:28\",\n            \"updated_at\": \"2024-03-28 07:34:28\",\n            \"stock\": \"14\",\n            \"stocks\": [\n                {\n                    \"id\": \"36cdba95-6d52-3763-a2c1-ea1374255d9a\",\n                    \"product_id\": \"58ad8922-68c8-3eac-9822-7ee00164c13e\",\n                    \"type\": 1,\n                    \"stock\": 14,\n                    \"created_at\": \"2024-03-28 07:34:29\",\n                    \"updated_at\": \"2024-03-28 07:34:29\"\n                }\n            ]\n        },\n        {\n            \"id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n            \"name\": \"Christa Willms\",\n            \"description\": \"Consequuntur amet labore consequatur maxime fugiat qui quos omnis. In et id voluptatibus laudantium est unde. Distinctio quas nostrum adipisci.\",\n            \"price\": \"97.46\",\n            \"created_at\": \"2024-03-28 07:30:21\",\n            \"updated_at\": \"2024-03-28 07:30:21\",\n            \"stock\": \"97\",\n            \"stocks\": [\n                {\n                    \"id\": \"0edd8124-d01a-3db0-8b5a-3590a8adfd12\",\n                    \"product_id\": \"6b84dbb7-0773-3c8d-98af-c9b3ea34076d\",\n                    \"type\": 1,\n                    \"stock\": 97,\n                    \"created_at\": \"2024-03-28 07:30:22\",\n                    \"updated_at\": \"2024-03-28 07:30:22\"\n                }\n            ]\n        },\n        {\n            \"id\": \"79e09a59-ac62-358c-98c2-8d10791819ff\",\n            \"name\": \"Dr. Chet McDermott I\",\n            \"description\": \"Veniam quia est vel accusamus officiis aspernatur. Deserunt voluptatem amet cumque. Esse incidunt dolorem quam sint delectus saepe nihil. Quia id et cum asperiores et ut totam.\",\n            \"price\": \"492.12\",\n            \"created_at\": \"2024-03-28 07:30:21\",\n            \"updated_at\": \"2024-03-28 07:30:21\",\n            \"stock\": \"80\",\n            \"stocks\": [\n                {\n                    \"id\": \"92f02ee2-51c9-3c64-8474-c533a0f3270e\",\n                    \"product_id\": \"79e09a59-ac62-358c-98c2-8d10791819ff\",\n                    \"type\": 1,\n                    \"stock\": 80,\n                    \"created_at\": \"2024-03-28 07:30:22\",\n                    \"updated_at\": \"2024-03-28 07:30:22\"\n                }\n            ]\n        },\n        {\n            \"id\": \"902cc105-7922-3e3f-a279-5e4fb455bd24\",\n            \"name\": \"Mr. Alejandrin Gutkowski DVM\",\n            \"description\": \"Et sit temporibus et molestiae atque voluptates quam. Est sequi aut sed dolor atque adipisci exercitationem. Sed incidunt vel quisquam ut aut cum vitae.\",\n            \"price\": \"175.01\",\n            \"created_at\": \"2024-03-28 07:34:28\",\n            \"updated_at\": \"2024-03-28 07:34:28\",\n            \"stock\": \"53\",\n            \"stocks\": [\n                {\n                    \"id\": \"80533f22-5d0b-3d7e-9653-c4c26f003b99\",\n                    \"product_id\": \"902cc105-7922-3e3f-a279-5e4fb455bd24\",\n                    \"type\": 1,\n                    \"stock\": 11,\n                    \"created_at\": \"2024-03-28 07:34:29\",\n                    \"updated_at\": \"2024-03-28 07:34:29\"\n                },\n                {\n                    \"id\": \"f02cd849-33f5-3ada-84b5-fa8397aaa0ea\",\n                    \"product_id\": \"902cc105-7922-3e3f-a279-5e4fb455bd24\",\n                    \"type\": 0,\n                    \"stock\": 42,\n                    \"created_at\": \"2024-03-28 07:34:29\",\n                    \"updated_at\": \"2024-03-28 07:34:29\"\n                }\n            ]\n        },\n        {\n            \"id\": \"91032dce-5077-3322-8fc5-d6eb4a16eb62\",\n            \"name\": \"Ola Grant\",\n            \"description\": \"Repellat ut ut numquam omnis non eum. Id placeat et laboriosam omnis autem. Aspernatur repellat velit neque tempora commodi.\",\n            \"price\": \"41.06\",\n            \"created_at\": \"2024-03-28 07:34:28\",\n            \"updated_at\": \"2024-03-28 07:34:28\",\n            \"stock\": null,\n            \"stocks\": []\n        },\n        {\n            \"id\": \"a06dce61-f1eb-3b9a-9272-4ca31e429a35\",\n            \"name\": \"Mr. Austyn Pfeffer\",\n            \"description\": \"Assumenda quae ut nulla rem veritatis. Amet qui error quis a. Minima voluptatibus voluptas iste voluptates doloremque. Id aut sint est et repellat qui. Qui odio aut consequuntur cum voluptate.\",\n            \"price\": \"962.89\",\n            \"created_at\": \"2024-03-28 07:30:20\",\n            \"updated_at\": \"2024-03-28 07:30:20\",\n            \"stock\": \"20\",\n            \"stocks\": [\n                {\n                    \"id\": \"b186a04e-fbdd-30d0-a68b-0a2c0e0cc419\",\n                    \"product_id\": \"a06dce61-f1eb-3b9a-9272-4ca31e429a35\",\n                    \"type\": 1,\n                    \"stock\": 10,\n                    \"created_at\": \"2024-03-28 07:30:22\",\n                    \"updated_at\": \"2024-03-28 07:30:22\"\n                },\n                {\n                    \"id\": \"bd9aee57-8aaf-3473-bae5-c4638ab49d94\",\n                    \"product_id\": \"a06dce61-f1eb-3b9a-9272-4ca31e429a35\",\n                    \"type\": 0,\n                    \"stock\": 10,\n                    \"created_at\": \"2024-03-28 07:30:22\",\n                    \"updated_at\": \"2024-03-28 07:30:22\"\n                }\n            ]\n        }\n    ]\n}"
+								}
+							]
+						},
+						{
+							"name": "detail",
+							"request": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}{{PREFIX}}/product/:id",
+									"host": [
+										"{{BASE_URL}}{{PREFIX}}"
+									],
+									"path": [
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "13e9a823-5877-3e8e-9fd8-02cd46e61f78"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "http://localhost:8000/v1/product/:id",
+											"protocol": "http",
+											"host": [
+												"localhost"
+											],
+											"port": "8000",
+											"path": [
+												"v1",
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "13e9a823-5877-3e8e-9fd8-02cd46e61f78"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"Success\",\n    \"data\": {\n        \"id\": \"13e9a823-5877-3e8e-9fd8-02cd46e61f78\",\n        \"name\": \"Johnpaul Feil\",\n        \"description\": \"Nam porro maiores soluta et. Aut voluptas neque quia. Quis soluta adipisci beatae quas enim expedita occaecati. Nihil quia provident explicabo quod. Sapiente non quo in rem velit magnam sint.\",\n        \"price\": \"329.27\",\n        \"created_at\": \"2024-03-28 07:30:21\",\n        \"updated_at\": \"2024-03-28 07:30:21\",\n        \"deleted_at\": null,\n        \"stock\": 0,\n        \"stocks\": [\n            {\n                \"id\": \"47abaaa8-a868-3452-b037-bba9b4bc36e9\",\n                \"product_id\": \"13e9a823-5877-3e8e-9fd8-02cd46e61f78\",\n                \"type\": 1,\n                \"stock\": 25,\n                \"created_at\": \"2024-03-28 07:30:22\",\n                \"updated_at\": \"2024-03-28 07:30:22\",\n                \"deleted_at\": null\n            }\n        ]\n    }\n}"
+								},
+								{
+									"name": "400",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/:id",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": ""
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": false,\n    \"message\": \"Invalid id\"\n}"
+								},
+								{
+									"name": "404",
+									"originalRequest": {
+										"method": "GET",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/:id",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "13e9a823-5877-3e8e-9fd8-02cd46e61f78"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": false,\n    \"message\": \"Product not found\"\n}"
+								}
+							]
+						},
+						{
+							"name": "create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Product A\",\r\n    \"description\": \"This is a product\",\r\n    \"price\": 10000,\r\n    \"stock\": 100 // Optional, when added the backend will automaticly insert to stocks with type 0 or stock in\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}{{PREFIX}}/product/",
+									"host": [
+										"{{BASE_URL}}{{PREFIX}}"
+									],
+									"path": [
+										"product",
+										""
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "201",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Product A\",\r\n    \"description\": \"This is a product\",\r\n    \"price\": 10000,\r\n    \"stock\": 100 // Optional, when added the backend will automaticly insert to stocks with type 0 or stock in\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"product",
+												""
+											]
+										}
+									},
+									"status": "Created",
+									"code": 201,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"Product created\",\n    \"data\": {\n        \"name\": \"Product A\",\n        \"description\": \"This is a product\",\n        \"price\": 10000,\n        \"id\": \"ae36873a-6f34-429d-a199-f62cf650fab9\",\n        \"updated_at\": \"2024-04-04 05:51:08\",\n        \"created_at\": \"2024-04-04 05:51:08\"\n    }\n}"
+								},
+								{
+									"name": "400",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"product",
+												""
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"The given data was invalid.\",\n    \"errors\": {\n        \"name\": [\n            \"Name is required\"\n        ],\n        \"description\": [\n            \"Description is required\"\n        ],\n        \"price\": [\n            \"Price is required\"\n        ],\n        \"stock\": [\n            \"Stock is required\"\n        ]\n    }\n}"
+								},
+								{
+									"name": "422",
+									"originalRequest": {
+										"method": "POST",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Product A\",\r\n    \"description\": \"This is a product\",\r\n    \"price\": 10000,\r\n    \"stock\": 100 // Optional, when added the backend will automaticly insert to stocks with type 0 or stock in\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"product",
+												""
+											]
+										}
+									},
+									"status": "Unprocessable Entity (WebDAV) (RFC 4918)",
+									"code": 422,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"The given data was invalid.\",\n    \"errors\": {\n        \"name\": [\n            \"Name is already taken\"\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"name\": \"Product A\",\r\n    \"description\": \"This is a product\",\r\n    \"price\": 10000\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{BASE_URL}}{{PREFIX}}/product/:id",
+									"host": [
+										"{{BASE_URL}}{{PREFIX}}"
+									],
+									"path": [
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "ae36873a-6f34-429d-a199-f62cf650fab9"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Product A\",\r\n    \"description\": \"This is a product\",\r\n    \"price\": 10000\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/:id",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "ae36873a-6f34-429d-a199-f62cf650fab9"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"Product updated\",\n    \"data\": {\n        \"id\": \"ae36873a-6f34-429d-a199-f62cf650fab9\",\n        \"name\": \"Product A2\",\n        \"description\": \"This is a product 2\",\n        \"price\": 15000,\n        \"created_at\": \"2024-04-04 05:51:08\",\n        \"updated_at\": \"2024-04-04 06:00:59\"\n    }\n}"
+								},
+								{
+									"name": "400",
+									"originalRequest": {
+										"method": "PUT",
+										"header": [],
+										"body": {
+											"mode": "raw",
+											"raw": "{\r\n    \"name\": \"Product A\",\r\n    \"description\": \"This is a product\",\r\n    \"price\": 10000\r\n}",
+											"options": {
+												"raw": {
+													"language": "json"
+												}
+											}
+										},
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/:id",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "ae36873a-6f34-429d-a199-f62cf650fab9"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"message\": \"The given data was invalid.\",\n    \"errors\": {\n        \"name\": [\n            \"Name is already taken\"\n        ]\n    }\n}"
+								}
+							]
+						},
+						{
+							"name": "delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{BASE_URL}}{{PREFIX}}/product/:id",
+									"host": [
+										"{{BASE_URL}}{{PREFIX}}"
+									],
+									"path": [
+										"product",
+										":id"
+									],
+									"variable": [
+										{
+											"key": "id",
+											"value": "ae36873a-6f34-429d-a199-f62cf650fab9"
+										}
+									]
+								}
+							},
+							"response": [
+								{
+									"name": "200",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/:id",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "ae36873a-6f34-429d-a199-f62cf650fab9"
+												}
+											]
+										}
+									},
+									"status": "OK",
+									"code": 200,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": true,\n    \"message\": \"Product deleted\",\n    \"data\": null\n}"
+								},
+								{
+									"name": "400",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/:id",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "ae36873a-6f34-429d-a199-f62cf650fab9"
+												}
+											]
+										}
+									},
+									"status": "Bad Request",
+									"code": 400,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\n    \"success\": false,\n    \"message\": \"Invalid Id\"\n}"
+								},
+								{
+									"name": "404",
+									"originalRequest": {
+										"method": "DELETE",
+										"header": [],
+										"url": {
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/:id",
+											"host": [
+												"{{BASE_URL}}{{PREFIX}}"
+											],
+											"path": [
+												"product",
+												":id"
+											],
+											"variable": [
+												{
+													"key": "id",
+													"value": "ae36873a-6f34-429d-a199-f62cf650fab9"
+												}
+											]
+										}
+									},
+									"status": "Not Found",
+									"code": 404,
+									"_postman_previewlanguage": "json",
+									"header": [
+										{
+											"key": "Content-Type",
+											"value": "application/json",
+											"name": "Content-Type",
+											"description": "",
+											"type": "text"
+										}
+									],
+									"cookie": [],
+									"body": "{\r\n    \"success\": false,\r\n    \"message\": \"Product not found\"\r\n}"
+								}
+							]
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "BASE_URL",
+			"value": "http://localhost:8000",
+			"type": "string"
+		},
+		{
+			"key": "PREFIX",
+			"value": "/v1",
+			"type": "string"
+		}
+	]
+}
