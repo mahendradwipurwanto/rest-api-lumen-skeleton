@@ -15,6 +15,8 @@ This repository serves as a skeleton for building a RESTful API using Lumen 10, 
 - PHP >= 8.2
 - Composer
 - Lumen 10 Framework
+- Postman
+- IDE or Text Editor
 
 ### Installation
 1. Clone the repository:

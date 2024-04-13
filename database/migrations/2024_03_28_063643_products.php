@@ -4,10 +4,21 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+/**
+ * CreateProductsTable Class
+ *
+ * This migration creates the 'products' table in the database.
+ * The table has a UUID primary key and columns for name, description, price, soft deletes, and timestamps.
+ * It extends the Migration class provided by Laravel.
+ *
+ * @author mahendradwipurwanto@gmail.com
+ */
 return new class extends Migration
 {
     /**
      * Run the migrations.
+     *
+     * @author mahendradwipurwanto@gmail.com
      */
     public function up(): void
     {
@@ -24,6 +35,8 @@ return new class extends Migration
 
     /**
      * Reverse the migrations.
+     *
+     * @author mahendradwipurwanto@gmail.com
      */
     public function down(): void
     {

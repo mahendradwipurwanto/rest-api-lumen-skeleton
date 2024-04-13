@@ -2,6 +2,7 @@
 	"info": {
 		"_postman_id": "e43add3f-891d-47bf-8e63-235148227d7f",
 		"name": "Lumen-Rest-API",
+		"description": "Simplifies **RESTful API** development with **Lumen**, the high-performance micro-framework for Laravel. Explore authenticated endpoints, user management, and resource manipulation seamlessly organized for efficient testing and development. Elevate your workflow, harness Lumen's agility, and expedite API development with this indispensable tool.",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
 		"_exporter_id": "1186529",
 		"_collection_link": "https://vepay-121222.postman.co/workspace/Whatsapp-JS~f3c2bdf5-eabe-4ab6-b7a1-fd4bd91dce65/collection/1186529-e43add3f-891d-47bf-8e63-235148227d7f?action=share&source=collection_link&creator=1186529"
@@ -47,7 +48,8 @@
 							},
 							"response": []
 						}
-					]
+					],
+					"description": "Ensures its reliability and functionality. By verifying essential components like availability, responsiveness, and data integrity, this assessment guarantees optimal performance."
 				},
 				{
 					"name": "Products",
@@ -78,14 +80,11 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "http://localhost:8000/v1/stock/",
-													"protocol": "http",
+													"raw": "{{BASE_URL}}{{PREFIX}}/stock/",
 													"host": [
-														"localhost"
+														"{{BASE_URL}}{{PREFIX}}"
 													],
-													"port": "8000",
 													"path": [
-														"v1",
 														"stock",
 														""
 													]
@@ -137,14 +136,11 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "http://localhost:8000/v1/stock/:id",
-													"protocol": "http",
+													"raw": "{{BASE_URL}}{{PREFIX}}/stock/:id",
 													"host": [
-														"localhost"
+														"{{BASE_URL}}{{PREFIX}}"
 													],
-													"port": "8000",
 													"path": [
-														"v1",
 														"stock",
 														":id"
 													],
@@ -277,14 +273,11 @@
 												"method": "GET",
 												"header": [],
 												"url": {
-													"raw": "http://localhost:8000/v1/stock/product/:product_id",
-													"protocol": "http",
+													"raw": "{{BASE_URL}}{{PREFIX}}/stock/product/:product_id",
 													"host": [
-														"localhost"
+														"{{BASE_URL}}{{PREFIX}}"
 													],
-													"port": "8000",
 													"path": [
-														"v1",
 														"stock",
 														"product",
 														":product_id"
@@ -431,14 +424,11 @@
 													}
 												},
 												"url": {
-													"raw": "http://localhost:8000/v1/stock/in",
-													"protocol": "http",
+													"raw": "{{BASE_URL}}{{PREFIX}}/stock/in",
 													"host": [
-														"localhost"
+														"{{BASE_URL}}{{PREFIX}}"
 													],
-													"port": "8000",
 													"path": [
-														"v1",
 														"stock",
 														"in"
 													]
@@ -541,14 +531,11 @@
 													}
 												},
 												"url": {
-													"raw": "http://localhost:8000/v1/stock/out",
-													"protocol": "http",
+													"raw": "{{BASE_URL}}{{PREFIX}}/stock/out",
 													"host": [
-														"localhost"
+														"{{BASE_URL}}{{PREFIX}}"
 													],
-													"port": "8000",
 													"path": [
-														"v1",
 														"stock",
 														"out"
 													]
@@ -610,7 +597,8 @@
 										}
 									]
 								}
-							]
+							],
+							"description": "Facilitates comprehensive stock management with functionalities for stock intake, outflow, and inventory tracking at both global and individual product levels. It enables seamless monitoring of stock levels, ensuring accurate and efficient management of inventory."
 						},
 						{
 							"name": "all",
@@ -649,14 +637,11 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "http://localhost:8000/v1/product/?page=&limit=&search={\"name\": \"\", \"description\": \"\"}",
-											"protocol": "http",
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/?page=&limit=&search={\"name\": \"\", \"description\": \"\"}",
 											"host": [
-												"localhost"
+												"{{BASE_URL}}{{PREFIX}}"
 											],
-											"port": "8000",
 											"path": [
-												"v1",
 												"product",
 												""
 											],
@@ -722,14 +707,11 @@
 										"method": "GET",
 										"header": [],
 										"url": {
-											"raw": "http://localhost:8000/v1/product/:id",
-											"protocol": "http",
+											"raw": "{{BASE_URL}}{{PREFIX}}/product/:id",
 											"host": [
-												"localhost"
+												"{{BASE_URL}}{{PREFIX}}"
 											],
-											"port": "8000",
 											"path": [
-												"v1",
 												"product",
 												":id"
 											],
@@ -1233,9 +1215,11 @@
 								}
 							]
 						}
-					]
+					],
+					"description": "Management of product data through CRUD operations and a dedicated endpoint for stock management. With Create, Read, Update, and Delete functionalities, product data is easily manipulated. Additionally, the stock management endpoint ensures accurate tracking and control over product inventory."
 				}
-			]
+			],
+			"description": "Product Service, featuring CRUD operations, simplifies product management. Create, Read, Update, and Delete functionalities streamline data handling, ensuring efficient integration and manipulation. This approach enhances application functionality and user experience, enabling seamless product management throughout its lifecycle."
 		}
 	],
 	"event": [
