@@ -43,7 +43,7 @@ class HealthController extends Controller
     {
         // Initialize an array to store application information
         $info['ms-name'] = env('APP_NAME', 'REST-API'); // Retrieve the application name from environment variables, default to 'REST-API'
-        $info['memory_usage'] = memory_get_usage(true); // Get the memory usage of the application
+        $info['memory_usage'] = GlobalHelper::formatBytes(memory_get_usage(true)); // Get the memory usage of the application
         $info['cpu_usage'] = GlobalHelper::get_server_load(); // Get the CPU usage of the server using GlobalHelper
 
         // Return a success response containing the application information

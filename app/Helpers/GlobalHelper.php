@@ -28,7 +28,7 @@ class GlobalHelper
     public static function get_server_load(): int|string
     {
         // Initialize variable to store the server load
-        $load = '';
+        $load = '0';
 
         // Check if the current OS is Windows
         if (stristr(PHP_OS, 'win')) {
@@ -78,5 +78,32 @@ class GlobalHelper
         echo json_encode($params);
         // Exit the script
         exit();
+    }
+
+    /**
+     * Format Bytes
+     *
+     * Converts the provided bytes into a human-readable format (KB, MB, GB, etc).
+     *
+     * @param int $bytes Bytes to be converted.
+     * @param int $precision Number of decimal places to round the result to.
+     * @return string Human-readable format of the provided bytes.
+     *
+     * @author
+     * @source https://stackoverflow.com/a/2510459
+     */
+    public static function formatBytes(int $bytes, int $precision = 2): string
+    {
+        // Define the units to be used in the conversion
+        $units = ['B', 'KB', 'MB', 'GB', 'TB'];
+
+        // Calculate the unit to be used based on the number of bytes
+        $unit = @floor(log($bytes, 1024));
+
+        // Calculate the size in the determined unit
+        $size = round($bytes / (1024 ** $unit), $precision);
+
+        // Return the formatted size with the unit
+        return "{$size} {$units[$unit]}";
     }
 }
